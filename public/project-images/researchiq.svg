@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+<rect width="1200" height="700" fill="#102038"/>
+<circle cx="950" cy="130" r="190" fill="#1a615f" opacity=".55"/>
+<circle cx="170" cy="610" r="250" fill="#283f79" opacity=".45"/>
+<text x="80" y="330" fill="#72e1d1" font-size="86" font-family="Arial" font-weight="700">ResearchIQ</text>
+<text x="84" y="405" fill="#a7b3c7" font-size="34" font-family="Arial">AI scientific literature analysis</text>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+<rect width="1200" height="700" fill="#102038"/>
+<rect x="210" y="155" width="780" height="390" rx="40" fill="#152b49" stroke="#72e1d1" stroke-width="6"/>
+<rect x="270" y="240" width="250" height="35" rx="17" fill="#72e1d1"/>
+<circle cx="840" cy="350" r="95" fill="#1a615f"/>
+<text x="270" y="440" fill="#e8edf7" font-size="62" font-family="Arial" font-weight="700">Payment Platform</text>
+</svg>

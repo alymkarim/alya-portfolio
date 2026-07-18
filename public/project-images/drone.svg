@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+<rect width="1200" height="700" fill="#102038"/>
+<path d="M250 350h700M400 250l400 200M800 250L400 450" stroke="#72e1d1" stroke-width="28" stroke-linecap="round"/>
+<circle cx="600" cy="350" r="95" fill="#1a615f"/>
+<circle cx="250" cy="350" r="70" fill="#223f68"/>
+<circle cx="950" cy="350" r="70" fill="#223f68"/>
+<text x="310" y="610" fill="#e8edf7" font-size="64" font-family="Arial" font-weight="700">UAV Human Detection</text>
+</svg>
