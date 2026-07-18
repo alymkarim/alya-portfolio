@@ -66,7 +66,7 @@ function Contact() {
             </a>
 
             <a
-              href="/Alya-Karim-CV.pdf"
+              href="/public/Alya_M_Karim_CV.pdf"
               target="_blank"
               rel="noreferrer"
             >

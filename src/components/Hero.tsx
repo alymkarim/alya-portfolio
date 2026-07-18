@@ -33,7 +33,7 @@ function Hero() {
 
             <a
               className="button secondary-button"
-              href="/Alya-Karim-CV.pdf"
+              href="/public/Alya_M_Karim_CV.pdf"
               download
             >
               Download CV <Download size={18} />
