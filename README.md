@@ -2,16 +2,22 @@
 
 A responsive personal portfolio built with React, TypeScript and Vite.
 
+![Portfolio Homepage](./webpage.png)
+
+## Live Demo
+
+🌐 https://your-portfolio.vercel.app
+
 ## Features
 
-- Responsive navigation
-- Hero and personal introduction
-- Skills grouped by category
-- Reusable project cards
-- Experience and education sections
-- CV download button
-- GitHub, LinkedIn and email links
-- Vercel-ready deployment
+- Fully responsive portfolio built with React, TypeScript and Vite
+- Editorial-inspired UI with custom CSS
+- Interactive project showcase with category filtering and expandable project details
+- Experience, education and technical skills overview
+- Technical writing section featuring Medium articles
+- Downloadable CV
+- Direct links to GitHub, LinkedIn, Medium and email
+- Optimized for deployment on Vercel
 
 ## Run locally
 
