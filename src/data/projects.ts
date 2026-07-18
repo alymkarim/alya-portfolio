@@ -345,39 +345,49 @@ export const projects: Project[] = [
       "Explainability should answer a specific decision question",
     ],
   },
-  {
-    id: "portfolio",
-    title: "Interactive Portfolio",
-    year: "2026",
-    status: "In progress",
-    category: ["Software"],
-    shortDescription:
-      "Editorial React portfolio with project case studies, writing and GitHub links.",
-    description:
-      "A custom-designed portfolio that presents my work across software, AI, data, sustainability and physics without relying on a generic template.",
-    role: "Frontend developer and designer",
-    technologies: ["React", "TypeScript", "Vite", "CSS", "Lucide React", "Vercel"],
-    image: "/projects/portfolio.png",
-    github: "https://github.com/alymkarim",
-    problem:
-      "Create a portfolio that communicates both technical depth and an interdisciplinary scientific background.",
-    highlights: [
-      "Responsive editorial design",
-      "Filterable project gallery",
-      "Expandable project case studies",
-      "Writing and playground sections",
-    ],
-    challenges: [
-      "Keeping a large body of work easy to scan",
-      "Avoiding visual clutter",
-      "Maintaining consistent project imagery",
-    ],
-    lessons: [
-      "Portfolio hierarchy matters as much as the amount of content",
-      "Recruiters need fast access to evidence",
-      "Consistent project storytelling makes diverse work feel coherent",
-    ],
-  },
+{
+  id: "portfolio",
+  title: "Developer Portfolio",
+  year: "2026",
+  status: "Live",
+  category: ["Software", "Frontend"],
+  shortDescription:
+    "A responsive React portfolio showcasing software engineering, AI and data projects with an interactive project explorer and technical blog.",
+  description:
+    "Designed and developed a modern portfolio application to present projects, technical writing and professional experience. Built from scratch with React and TypeScript, focusing on responsive design, reusable components, accessibility and performance.",
+  role: "Frontend developer",
+  technologies: [
+    "React",
+    "TypeScript",
+    "Vite",
+    "CSS",
+    "Lucide React",
+    "Vercel",
+  ],
+  image: "/project-images/webpage.png",
+  github: "https://github.com/alymkarim",
+  demo: "https://your-vercel-link.vercel.app",
+  problem:
+    "Create a fast, responsive portfolio that clearly communicates technical skills, project experience and career progression while remaining easy to navigate for recruiters.",
+  highlights: [
+    "Responsive design for desktop, tablet and mobile",
+    "Interactive project showcase with reusable components",
+    "Integrated technical blog and article pages",
+    "Downloadable CV and social links",
+    "Optimised performance with Vite",
+    "Deployed with Vercel using continuous deployment",
+  ],
+  challenges: [
+    "Presenting diverse projects without overwhelming users",
+    "Creating a consistent visual design across all sections",
+    "Balancing aesthetics with usability and accessibility",
+  ],
+  lessons: [
+    "Good UX helps recruiters find important information quickly",
+    "Reusable components make future updates much easier",
+    "Performance and responsiveness are just as important as appearance",
+  ],
+},
   {
     id: "urbantech",
     title: "UrbanTech Co-Working Spaces",
