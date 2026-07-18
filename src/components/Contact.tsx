@@ -66,7 +66,7 @@ function Contact() {
             </a>
 
             <a
-              href="/public/Alya_M_Karim_CV.pdf"
+              href="/Alya_M_Karim_CV.pdf"
               download="Alya_Karim_CV.pdf"
               type="application/pdf"
               target="_blank"
