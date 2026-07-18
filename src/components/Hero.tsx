@@ -12,8 +12,6 @@ function Hero() {
     <section className="hero" id="top">
       <div className="container hero-grid">
         <div>
-          <p className="eyebrow">Software • AI • Data</p>
-
           <h1>
             Hi, I'm <span>Alya Karim.</span>
           </h1>
