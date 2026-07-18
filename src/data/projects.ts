@@ -349,8 +349,8 @@ export const projects: Project[] = [
   id: "portfolio",
   title: "Developer Portfolio",
   year: "2026",
-  status: "Live",
-  category: ["Software", "Frontend"],
+  status: "Completed",
+  category: ["Software"],
   shortDescription:
     "A responsive React portfolio showcasing software engineering, AI and data projects with an interactive project explorer and technical blog.",
   description:
