@@ -1,33 +1,39 @@
 const skillGroups = [
   {
     title: "Frontend",
-    description: "Interfaces that are responsive, accessible and easy to use.",
+    description: "Responsive interfaces built around clear user workflows.",
     skills: ["React", "TypeScript", "Vite", "HTML", "CSS"],
   },
   {
     title: "Backend",
-    description: "APIs, business logic, authentication and service design.",
-    skills: ["Python", "FastAPI", "Java", "REST APIs", "SQLAlchemy"],
+    description: "APIs, authentication, business logic and service integration.",
+    skills: [
+      "Python",
+      "FastAPI",
+      "REST APIs",
+      "SQLAlchemy",
+      "JWT Authentication",
+    ],
   },
   {
     title: "AI & Machine Learning",
-    description: "Applied AI systems from computer vision to RAG workflows.",
-    skills: ["PyTorch", "YOLO", "LangChain", "RAG", "scikit-learn"],
+    description: "Applied AI systems spanning computer vision and document intelligence.",
+    skills: ["PyTorch", "YOLO", "OpenCV", "LangChain", "scikit-learn"],
   },
   {
-    title: "Data",
-    description: "Structured analysis, modelling and reliable data workflows.",
-    skills: ["PostgreSQL", "MongoDB", "Pandas", "NumPy", "R"],
+    title: "Data & Databases",
+    description: "Data modelling, analysis and dependable storage workflows.",
+    skills: ["PostgreSQL", "Supabase", "MongoDB", "Pandas", "NumPy"],
   },
   {
-    title: "Cloud & Delivery",
-    description: "Deploying and improving software beyond localhost.",
-    skills: ["Docker", "GitHub Actions", "Vercel", "Render", "Supabase"],
+    title: "Cloud & Deployment",
+    description: "Taking applications from local development to deployed products.",
+    skills: ["Docker", "Google Cloud", "Vercel", "Render", "GitHub"],
   },
   {
     title: "Engineering Practice",
-    description: "The habits that make software maintainable and dependable.",
-    skills: ["Git", "Testing", "Debugging", "Logging", "CI/CD"],
+    description: "Practices that make software easier to test, debug and maintain.",
+    skills: ["Git", "Testing", "Debugging", "Logging", "API Documentation"],
   },
 ];
 

@@ -2,11 +2,9 @@ export type ProjectCategory =
   | "Software"
   | "AI"
   | "Data"
-  | "Computer Vision"
   | "Healthcare"
-  | "Sustainability"
-  | "Physics"
-  | "Social Impact";
+  | "Research"
+  | "Sustainability";
 
 export type ProjectStatus = "Completed" | "In progress" | "Planned";
 
@@ -39,16 +37,15 @@ export type Project = {
 const githubCover = (repository: string) =>
   `https://opengraph.githubassets.com/1/alymkarim/${repository}`;
 
+
 export const projectFilters: Array<"All" | ProjectCategory> = [
   "All",
   "Software",
   "AI",
   "Data",
-  "Computer Vision",
   "Healthcare",
+  "Research",
   "Sustainability",
-  "Physics",
-  "Social Impact",
 ];
 
 export const projects: Project[] = [
@@ -215,7 +212,7 @@ export const projects: Project[] = [
     year: "2025",
     status: "Completed",
     featured: true,
-    category: ["AI", "Computer Vision", "Social Impact"],
+    category: ["AI", "Research"],
     shortDescription:
       "YOLO-based aerial human and posture detection for search-and-rescue operations.",
     description:
@@ -260,11 +257,11 @@ export const projects: Project[] = [
   },
   {
     id: "deepfake-detection",
-    title: "Real-Time Deepfake Detection",
+    title: "DeepGuard (Deepfake Detection)",
     year: "2026",
     status: "In progress",
     featured: true,
-    category: ["AI", "Computer Vision"],
+    category: ["AI"],
     shortDescription:
       "Video and webcam pipeline for identifying manipulated facial media.",
     description:
@@ -305,7 +302,7 @@ export const projects: Project[] = [
     year: "2026",
     status: "In progress",
     featured: true,
-    category: ["AI", "Data", "Software"],
+    category: ["AI", "Data"],
     shortDescription:
       "Interactive analytics application for cleaning, visualisation, prediction and explainability.",
     description:
@@ -428,7 +425,7 @@ export const projects: Project[] = [
     title: "AI for MedTech",
     year: "2025",
     status: "Completed",
-    category: ["AI", "Healthcare", "Data"],
+    category: ["AI", "Healthcare"],
     shortDescription:
       "RUN-EU collaborative research project exploring AI for CT and MRI analysis.",
     description:
@@ -466,7 +463,7 @@ export const projects: Project[] = [
     title: "Parkinson’s Disease Prediction",
     year: "2025",
     status: "Completed",
-    category: ["AI", "Healthcare", "Data"],
+    category: ["AI", "Data", "Healthcare"],
     shortDescription:
       "Explainable machine learning using sensor-based handwriting data.",
     description:
@@ -508,7 +505,7 @@ export const projects: Project[] = [
     title: "GP Practice Analytics",
     year: "2024",
     status: "Completed",
-    category: ["Healthcare", "Data"],
+    category: ["Data"],
     shortDescription:
       "Operational analytics and reporting for an Irish general-practice setting.",
     description:
@@ -671,7 +668,7 @@ export const projects: Project[] = [
     title: "EcoZone Mapper",
     year: "2025",
     status: "Completed",
-    category: ["Data", "Sustainability", "Social Impact"],
+    category: ["Sustainability", "Data"],
     shortDescription:
       "GIS waste-management analytics created during NASA Space Apps.",
     description:
@@ -703,7 +700,7 @@ export const projects: Project[] = [
     title: "Umbrella Green",
     year: "2022",
     status: "Completed",
-    category: ["Sustainability", "Social Impact", "Physics"],
+    category: ["Sustainability", "Research"],
     shortDescription:
       "Award-winning modular rainwater-harvesting concept for climate-resilient cities.",
     description:
@@ -739,7 +736,7 @@ export const projects: Project[] = [
   title: "UTP–UIR Riau Community Service Project",
   year: "2018",
   status: "Completed",
-  category: ["Social Impact", "Sustainability"],
+  category: ["Sustainability"],
   shortDescription:
     "Community-service project supporting a rural island community through solar-energy installation and science outreach.",
   description:
@@ -788,7 +785,7 @@ export const projects: Project[] = [
     title: "Graphene–Iron Oxide Biosensor",
     year: "2020",
     status: "Completed",
-    category: ["Physics", "Healthcare"],
+    category: ["Research", "Healthcare"],
     shortDescription:
       "Award-winning impedimetric biosensor for detecting the mycotoxin zearalenone.",
     description:
@@ -835,7 +832,7 @@ export const projects: Project[] = [
     title: "Thermally Conductive 3D-Printing Resin",
     year: "2019",
     status: "Completed",
-    category: ["Physics"],
+    category: ["Research"],
     shortDescription:
       "Nanocomposite research to improve the thermal conductivity of printable resins.",
     description:
@@ -870,7 +867,7 @@ export const projects: Project[] = [
     title: "Graphene/CNT Foam for Oil-Spill Cleanup",
     year: "2019",
     status: "Completed",
-    category: ["Physics", "Sustainability"],
+    category: ["Research", "Sustainability"],
     shortDescription:
       "Review and research support for recyclable oleophilic nanomaterial foam.",
     description:
@@ -905,7 +902,7 @@ export const projects: Project[] = [
     title: "Auto-Vent",
     year: "2018",
     status: "Completed",
-    category: ["Physics", "Social Impact"],
+    category: ["Research", "Sustainability"],
     shortDescription:
       "Automated vehicle ventilation concept designed to reduce hot-car incidents.",
     description:
@@ -935,7 +932,7 @@ export const projects: Project[] = [
     title: "Aquatic-Plant Wastewater Treatment",
     year: "2018",
     status: "Completed",
-    category: ["Physics", "Sustainability"],
+    category: ["Research", "Sustainability"],
     shortDescription:
       "Team study of natural water treatment measured using flame AAS.",
     description:
@@ -970,7 +967,7 @@ export const projects: Project[] = [
     title: "Dye-Sensitized Solar Cells",
     year: "2017",
     status: "Completed",
-    category: ["Physics", "Sustainability"],
+    category: ["Research", "Sustainability"],
     shortDescription:
       "Low-cost solar-cell research focused on improving light absorption.",
     description:

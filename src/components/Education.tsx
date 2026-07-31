@@ -2,6 +2,20 @@ import { GraduationCap } from "lucide-react";
 
 const educationItems = [
   {
+  period: "2026",
+  degree: "CompTIA Cybersecurity Analyst+ (CySA+) Preparation",
+  institution: "SOLAS / Skills Connect",
+  result: "In Progress (14-week programme)",
+  description:
+    "Industry-focused cybersecurity training preparing for the CompTIA CySA+ certification, covering threat detection, vulnerability management, security operations and incident response.",
+  details: [
+    "14-week part-time programme",
+    "Preparing for CompTIA CySA+ certification",
+    "Threat detection and security monitoring",
+    "Vulnerability assessment and incident response",
+  ],
+},
+  {
     period: "2025",
     degree: "Certificate in Software Engineering",
     institution:

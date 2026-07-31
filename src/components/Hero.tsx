@@ -19,9 +19,10 @@ function Hero() {
           <h2>Still thinking like a physicist. Now building software.</h2>
 
           <p className="hero-copy">
-            I enjoy building software where AI meets engineering. 
-            My background spans applied physics, machine learning and full-stack development, 
-            with a focus on creating intelligent systems that people can actually use.
+            I build full-stack applications, backend systems and applied AI
+            products using Python, FastAPI, React and PostgreSQL. My background
+            in physics and data analytics shapes how I solve problems:
+            methodically, experimentally and with real-world use in mind.
           </p>
 
           <div className="hero-actions">
@@ -87,7 +88,7 @@ function Hero() {
 
           <div>
             <p>Currently focused on</p>
-            <strong>Full-stack AI products</strong>
+            <strong>Full-stack and AI products</strong>
           </div>
 
           <div>

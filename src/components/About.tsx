@@ -8,21 +8,31 @@ function About() {
         </div>
         <div className="about-copy">
           <p>
-            I recently completed an MSc in Data Analytics at Technological
-            University of the Shannon, where my research focused on drone-based
-            human detection for search-and-rescue operations.
+            I am a software engineer with a background in applied physics, data
+            analytics and machine learning. I enjoy taking ideas beyond the
+            prototype stage and turning them into complete, usable applications.
           </p>
+
           <p>
-            My work combines software engineering, machine learning and data
-            analysis. I enjoy building systems end to end: designing APIs,
-            structuring databases, training models, creating interfaces, testing
-            features and deploying applications to the cloud.
+            I work across the development process, from designing REST APIs and
+            structuring databases to building React interfaces, integrating
+            machine learning models, testing features and deploying applications
+            to the cloud.
           </p>
+
           <p>
-            Before moving into software and data, I studied applied physics and
-            completed research involving graphene-based biosensors. That
-            scientific background shapes how I approach engineering problems:
-            methodically, experimentally and with attention to real-world impact.
+            I completed an MSc in Data Analytics with First Class Honours at
+            Technological University of the Shannon. My research focused on
+            drone-based human detection for search-and-rescue operations, while
+            my earlier applied physics research involved graphene-based
+            biosensors.
+          </p>
+
+          <p>
+            That combination of scientific research and software engineering
+            shapes how I approach problems: with curiosity, structured
+            experimentation and attention to how a system will work outside a
+            notebook.
           </p>
         </div>
       </div>
