@@ -53,7 +53,7 @@ export const projects: Project[] = [
     id: "researchiq",
     title: "ResearchIQ",
     year: "2026",
-    status: "Completed",
+    status: "In progress",
     featured: true,
     category: ["AI", "Software"],
     shortDescription:
@@ -635,7 +635,7 @@ export const projects: Project[] = [
     id: "data-infrastructure",
     title: "Data Infrastructure for AI Systems",
     year: "2025",
-    status: "Completed",
+    status: "In progress",
     category: ["Data", "Software"],
     shortDescription:
       "Cloud-ready ETL pipelines for machine-learning and analytics workflows.",
@@ -979,7 +979,7 @@ export const projects: Project[] = [
       "Materials Synthesis",
       "Optical Characterisation",
     ],
-    image: "/project-images/dyesensitized.jpg",
+    image: "/project-images/dyesensitize.jpg",
     problem:
       "Investigate accessible photovoltaic materials that can improve light absorption at lower production cost.",
     highlights: [
