@@ -6,7 +6,7 @@ A responsive personal portfolio built with React, TypeScript and Vite.
 
 ## Live Demo
 
-🌐 alya-portfolio-jade.vercel.app
+🌐 [alya-portfolio-jade.vercel.app](https://alya-portfolio-jade.vercel.app/)
 
 ## Features
 
