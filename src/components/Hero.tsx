@@ -32,7 +32,7 @@ function Hero() {
 
             <a
               className="button secondary-button"
-              href="https://alya-portfolio-jade.vercel.app/Alya_M_Karim_CV.pdf"
+              href="/Alya_M_Karim_CV.pdf"
               download="Alya_M_Karim_CV.pdf"
               aria-label="Download Alya Karim CV as PDF"
             >
