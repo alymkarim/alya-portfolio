@@ -2,7 +2,7 @@
 
 A responsive personal portfolio built with React, TypeScript and Vite.
 
-![Portfolio Homepage](./webpage.png)
+![Portfolio Homepage](./mainpage.png)
 
 ## Live Demo
 
