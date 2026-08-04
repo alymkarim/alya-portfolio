@@ -12,25 +12,22 @@ function About() {
         </Reveal>
         <div className="about-copy">
           <p>
-            I'm a full-stack software engineer and AI engineer building applied
-            products with Python, FastAPI, React and PostgreSQL. I take ideas
-            beyond the prototype stage and turn them into complete, deployed
-            applications.
+            I'm a recent MSc Data Analytics graduate with a background in
+            applied physics, building full-stack applications and AI products
+            with Python, FastAPI, React and PostgreSQL.
           </p>
 
           <p>
-            I work across the development process, from designing REST APIs and
-            structuring databases to building React interfaces, integrating
-            machine learning models, testing features and deploying applications
-            to the cloud.
+            My work spans the full development process, from designing REST
+            APIs and structuring databases to building React interfaces,
+            integrating ML models and deploying to the cloud.
           </p>
 
           <p>
-            I completed an MSc in Data Analytics with First Class Honours at
-            Technological University of the Shannon. My research focused on
-            drone-based human detection for search-and-rescue operations, while
-            my earlier applied physics research involved graphene-based
-            biosensors.
+            I completed my MSc at Technological University of the Shannon,
+            where my research focused on drone-based human detection for
+            search-and-rescue. Earlier applied physics research involved
+            graphene-based biosensors.
           </p>
 
           <p>

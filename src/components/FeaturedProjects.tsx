@@ -30,8 +30,8 @@ function FeaturedProjects() {
             </div>
 
             <p>
-              The projects I'm most proud of. Select any card to open the full
-              case study.
+              A curated selection of projects spanning software, AI and data.
+              Select any card to explore the full story.
             </p>
           </div>
         </Reveal>
