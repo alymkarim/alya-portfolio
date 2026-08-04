@@ -298,7 +298,7 @@ export const projects: Project[] = [
     year: "2026",
     status: "Completed",
     featured: true,
-    category: ["AI", "Software Engineering", "Data"],
+    category: ["AI", "Software", "Data"],
 
     shortDescription:
       "Full-stack machine learning platform for dataset analysis, model training, explainable AI and interactive predictions.",
