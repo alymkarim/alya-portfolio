@@ -296,47 +296,79 @@ export const projects: Project[] = [
     id: "insightforge",
     title: "InsightForge AI",
     year: "2026",
-    status: "In progress",
+    status: "Completed",
     featured: true,
-    category: ["AI", "Data"],
+    category: ["AI", "Software Engineering", "Data"],
+
     shortDescription:
-      "Interactive analytics application for cleaning, visualisation, prediction and explainability.",
+      "Full-stack machine learning platform for dataset analysis, model training, explainable AI and interactive predictions.",
+
     description:
-      "InsightForge AI guides users through an end-to-end analytics workflow using employee attrition as its initial case study.",
-    role: "Data-product developer",
+      "InsightForge AI is a full-stack analytics platform that enables users to upload datasets, automatically profile their structure, train and compare machine learning models, and generate explainable predictions through an intuitive web interface. The platform supports CSV, Excel and structured PDF datasets while adapting dynamically to both classification and regression tasks.",
+
+    role: "Full-Stack AI Developer",
+
     technologies: [
+      "React",
+      "TypeScript",
+      "Vite",
+      "FastAPI",
       "Python",
-      "Streamlit",
       "Pandas",
+      "NumPy",
       "scikit-learn",
-      "SHAP",
+      "Recharts",
+      "Joblib",
+      "pdfplumber",
       "pytest",
+      "Vercel",
     ],
-    image: "/project-images/llm.jpg",
+
+    image: "/project-images/insightai.png",
+
+    github: "https://github.com/alymkarim/InsightForge-AI",
+
+    demo: "https://insight-forge-ai-bb4f.vercel.app/",
+
     problem:
-      "Analytics workflows are often fragmented across notebooks. InsightForge brings data quality, exploration, modelling and interpretation into one application.",
+      "Building machine learning solutions typically requires multiple disconnected tools for preprocessing, training, evaluation and prediction. InsightForge AI unifies the complete workflow into a single interactive application, making machine learning more accessible while maintaining transparency through explainable AI.",
+
     architecture: [
-      "Dataset validation",
-      "Cleaning and preprocessing",
-      "Exploratory visualisations",
+      "Dataset upload (CSV, Excel and PDF)",
+      "Automatic schema detection and data profiling",
+      "Data validation and preprocessing",
+      "Dynamic classification and regression pipeline",
       "Model training and comparison",
-      "SHAP explainability",
+      "Feature importance analysis",
+      "Interactive prediction interface",
+      "REST API with FastAPI",
     ],
+
     highlights: [
-      "IBM HR attrition case study",
-      "Reusable preprocessing",
-      "Model comparison",
-      "Explainable predictions",
+      "Supports CSV, Excel and structured PDF datasets",
+      "Automatic dataset profiling and schema detection",
+      "Classification and regression workflows",
+      "Automatic best-model selection",
+      "Feature importance visualisation",
+      "Interactive prediction dashboard",
+      "Responsive React frontend",
+      "REST API built with FastAPI",
+      "Live deployment on Vercel",
     ],
+
     challenges: [
-      "Preventing data leakage",
-      "Supporting different input datasets",
-      "Explaining predictions clearly",
+      "Designing a dataset-agnostic machine learning pipeline",
+      "Supporting multiple file formats including PDF tables",
+      "Automatically switching between regression and classification",
+      "Generating dynamic prediction forms from uploaded datasets",
+      "Deploying a full-stack AI application on Vercel",
     ],
+
     lessons: [
-      "Reusable pipelines are easier to test than notebooks",
-      "Input validation is essential in data products",
-      "Explainability should answer a specific decision question",
+      "Machine learning applications require strong software engineering principles as much as good models.",
+      "Dynamic preprocessing pipelines greatly improve reusability across different datasets.",
+      "Explainability is most valuable when presented in language users can easily understand.",
+      "Separating frontend and backend deployments simplifies maintenance and scaling.",
     ],
   },
 {
