@@ -13,14 +13,11 @@ function About() {
         <div className="about-copy">
           <p>
             I am a recent MSc Data Analytics graduate with a background in
-            applied physics, building full-stack applications and AI products
-            with Python, FastAPI, React and PostgreSQL.
-          </p>
-
-          <p>
-            My work spans the full development process, from designing REST
-            APIs and structuring databases to building React interfaces,
-            integrating ML models and deploying to the cloud.
+            applied physics. I build full-stack applications and AI products
+            with Python, FastAPI, React and PostgreSQL, covering everything
+            from designing REST APIs and structuring databases to building
+            React interfaces, integrating ML models and deploying to the
+            cloud.
           </p>
 
           <p>
@@ -31,19 +28,19 @@ function About() {
           </p>
 
           <p>
-            I am currently sharpening my skills in system design and cloud
-            architecture while looking for a junior software engineering or
-            AI engineering role where I can contribute and keep learning.
-          </p>
-
-          <p>
-            Outside of my core studies I have built tools across a wide range
-            of technologies: computer vision pipelines with OpenCV and
+            Beyond my core studies I have built tools across a wide range of
+            technologies: computer vision pipelines with OpenCV and
             TensorFlow, real time data dashboards with Plotly and Streamlit,
             REST APIs with FastAPI and Docker, and full stack dashboards
             combining React with PostgreSQL. I also write on Medium when I
             can, sharing lessons from my learning journey and the projects
             that push me to upskill.
+          </p>
+
+          <p>
+            I am currently sharpening my skills in system design and cloud
+            architecture while looking for a junior software engineering or
+            AI engineering role where I can contribute and keep learning.
           </p>
         </div>
       </div>

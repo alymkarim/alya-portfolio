@@ -53,7 +53,7 @@ function Projects() {
         <Reveal>
           <div className="projects-heading">
             <div>
-              <p className="section-label">Selected work</p>
+              <p className="section-label">All projects</p>
               <h2 className="section-title">
                 Projects across software, AI, data and research.
               </h2>

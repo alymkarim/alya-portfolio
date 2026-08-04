@@ -27,7 +27,7 @@ describe("routing", () => {
   it("renders the homepage with articles and contact sections", () => {
     renderAt("/");
     expect(screen.getByRole("heading", { name: /Thoughts on software, AI/i })).toBeInTheDocument();
-    expect(screen.getByRole("heading", { name: /Let's build something/i })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: /Let's get in touch/i })).toBeInTheDocument();
   });
 
   it("renders the full homepage at /articles", () => {
@@ -44,7 +44,7 @@ describe("routing", () => {
   it("renders the full homepage at /contact", () => {
     renderAt("/contact");
     expect(screen.getByText(/Hi, I'm/i)).toBeInTheDocument();
-    expect(screen.getByRole("heading", { name: /Let's build something/i })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: /Let's get in touch/i })).toBeInTheDocument();
   });
 
   it("navigates from the navbar to the articles page", async () => {
