@@ -1,4 +1,5 @@
 import { GraduationCap } from "lucide-react";
+import Reveal from "./Reveal";
 
 const educationItems = [
   {
@@ -65,16 +66,18 @@ function Education() {
       <div className="education-blob education-blob-two" />
 
       <div className="container">
-        <div className="simple-section-heading">
-          <div>
-            <p className="section-label">Education</p>
-            <h2 className="section-title">
-              Where software meets science.
-            </h2>
-          </div>
+        <Reveal>
+          <div className="simple-section-heading">
+            <div>
+              <p className="section-label">Education</p>
+              <h2 className="section-title">
+                Where software meets science.
+              </h2>
+            </div>
 
-          <GraduationCap className="education-heading-icon" size={52} />
-        </div>
+            <GraduationCap className="education-heading-icon" size={52} />
+          </div>
+        </Reveal>
 
         <div className="education-grid">
           {educationItems.map((item, index) => (

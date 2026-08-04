@@ -2,6 +2,7 @@ import { useState } from "react";
 import { ArrowUpRight, ExternalLink, Github } from "lucide-react";
 import { featuredProjects, type Project } from "../data/projects";
 import ProjectDetails from "./ProjectDetails";
+import Reveal from "./Reveal";
 
 function FeaturedProjects() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
@@ -9,19 +10,21 @@ function FeaturedProjects() {
   return (
     <section className="section featured-block" id="featured">
       <div className="container">
-        <div className="projects-heading">
-          <div>
-            <p className="section-label">Highlights</p>
-            <h2 className="section-title">
-              Featured work across software, AI and data.
-            </h2>
-          </div>
+        <Reveal>
+          <div className="projects-heading">
+            <div>
+              <p className="section-label">Highlights</p>
+              <h2 className="section-title">
+                Featured work across software, AI and data.
+              </h2>
+            </div>
 
-          <p>
-            The projects I'm most proud of. Select any card to open the full
-            case study.
-          </p>
-        </div>
+            <p>
+              The projects I'm most proud of. Select any card to open the full
+              case study.
+            </p>
+          </div>
+        </Reveal>
 
         <div className="featured-grid">
           {featuredProjects.map((project) => (

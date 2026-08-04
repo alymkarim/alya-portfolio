@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 
 const anchorLinks = ["projects", "experience", "education", "skills"];
@@ -34,9 +34,14 @@ function Navbar() {
             </Link>
           ))}
           {pageLinks.map((link) => (
-            <Link key={link} to={`/${link}`} onClick={() => setOpen(false)}>
+            <NavLink
+              key={link}
+              to={`/${link}`}
+              onClick={() => setOpen(false)}
+              className={({ isActive }) => (isActive ? "nav-link-active" : undefined)}
+            >
               {link}
-            </Link>
+            </NavLink>
           ))}
         </nav>
       </div>

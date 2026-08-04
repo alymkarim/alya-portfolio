@@ -1,11 +1,15 @@
+import Reveal from "./Reveal";
+
 function About() {
   return (
     <section className="section" id="about">
       <div className="container two-column">
-        <div>
-          <p className="section-label">About</p>
-          <h2 className="section-title">From physics to intelligent software.</h2>
-        </div>
+        <Reveal>
+          <div>
+            <p className="section-label">About</p>
+            <h2 className="section-title">From physics to intelligent software.</h2>
+          </div>
+        </Reveal>
         <div className="about-copy">
           <p>
             I'm a full-stack software engineer and AI engineer building applied

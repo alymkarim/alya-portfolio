@@ -9,6 +9,7 @@ import {
   type Project,
 } from "../data/projects";
 import ProjectDetails from "./ProjectDetails";
+import Reveal from "./Reveal";
 
 function Projects() {
   const [activeFilter, setActiveFilter] =
@@ -49,19 +50,21 @@ function Projects() {
   return (
     <section className="section projects-section" id="projects">
       <div className="container">
-        <div className="projects-heading">
-          <div>
-            <p className="section-label">Selected work</p>
-            <h2 className="section-title">
-              Projects across software, AI, data and research.
-            </h2>
-          </div>
+        <Reveal>
+          <div className="projects-heading">
+            <div>
+              <p className="section-label">Selected work</p>
+              <h2 className="section-title">
+                Projects across software, AI, data and research.
+              </h2>
+            </div>
 
-          <p>
-            Completed work, active builds, scientific research and collaborative
-            projects. Select any card to open the full project case study.
-          </p>
-        </div>
+            <p>
+              Completed work, active builds, scientific research and collaborative
+              projects. Select any card to open the full project case study.
+            </p>
+          </div>
+        </Reveal>
 
         <div className="project-toolbar">
           <p className="project-count">
