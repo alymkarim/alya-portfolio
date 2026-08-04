@@ -872,9 +872,19 @@ footer {
 .footer-content {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 1rem;
   color: var(--muted);
   font-size: 0.9rem;
+}
+
+.footer-easter-egg {
+  color: var(--border);
+  transition: color 0.3s ease;
+}
+
+.footer-easter-egg:hover {
+  color: var(--accent);
 }
 
 /* Responsive */

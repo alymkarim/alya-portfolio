@@ -1,3 +1,4 @@
+import { Bug } from "lucide-react";
 import { Link } from "react-router-dom";
 
 function Footer() {
@@ -6,11 +7,13 @@ function Footer() {
       <div className="container footer-content">
         <p>© {new Date().getFullYear()} Alya Karim</p>
         <p>Built with React, TypeScript and Vite.</p>
-        <nav aria-label="Footer">
-          <Link to="/articles">Articles</Link>
-          <Link to="/playground">Playground</Link>
-          <Link to="/contact">Contact</Link>
-        </nav>
+        <Link
+          to="/#playground"
+          className="footer-easter-egg"
+          aria-label="Playground"
+        >
+          <Bug size={14} />
+        </Link>
       </div>
     </footer>
   );
