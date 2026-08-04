@@ -8,7 +8,7 @@ function Footer() {
         <p>© {new Date().getFullYear()} Alya Karim</p>
         <p>Built with React, TypeScript and Vite.</p>
         <Link
-          to="/#playground"
+          to="/playground"
           className="footer-easter-egg"
           aria-label="Playground"
         >

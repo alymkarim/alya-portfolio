@@ -9,7 +9,6 @@ const anchorLinks = [
   "education",
   "skills",
   "articles",
-  "playground",
   "contact",
 ];
 

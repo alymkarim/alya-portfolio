@@ -1,6 +1,7 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout";
 import HomePage from "./pages/HomePage";
+import PlaygroundPage from "./pages/PlaygroundPage";
 
 function App() {
   return (
@@ -8,7 +9,7 @@ function App() {
       <Route element={<Layout />}>
         <Route index element={<HomePage />} />
         <Route path="articles" element={<HomePage scrollTarget="articles" />} />
-        <Route path="playground" element={<HomePage scrollTarget="playground" />} />
+        <Route path="playground" element={<PlaygroundPage />} />
         <Route path="contact" element={<HomePage scrollTarget="contact" />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Route>

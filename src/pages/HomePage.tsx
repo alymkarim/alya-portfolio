@@ -8,7 +8,6 @@ import Experience from "../components/Experience";
 import Education from "../components/Education";
 import Skills from "../components/Skills";
 import Articles from "../components/Articles";
-import Playground from "../components/Playground";
 import Contact from "../components/Contact";
 
 function HomePage({ scrollTarget }: { scrollTarget?: string }) {
@@ -31,7 +30,6 @@ function HomePage({ scrollTarget }: { scrollTarget?: string }) {
       <Education />
       <Skills />
       <Articles />
-      <Playground />
       <Contact />
     </>
   );

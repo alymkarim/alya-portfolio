@@ -24,10 +24,9 @@ describe("routing", () => {
     expect(screen.getByRole("heading", { name: /Projects across software/i })).toBeInTheDocument();
   });
 
-  it("renders the homepage with articles, playground and contact sections", () => {
+  it("renders the homepage with articles and contact sections", () => {
     renderAt("/");
     expect(screen.getByRole("heading", { name: /Thoughts on software, AI/i })).toBeInTheDocument();
-    expect(screen.getByRole("heading", { name: /Take a break and fix some bugs/i })).toBeInTheDocument();
     expect(screen.getByRole("heading", { name: /Let's build something/i })).toBeInTheDocument();
   });
 
@@ -37,9 +36,8 @@ describe("routing", () => {
     expect(screen.getByRole("heading", { name: /Thoughts on software, AI/i })).toBeInTheDocument();
   });
 
-  it("renders the full homepage at /playground", () => {
+  it("renders the playground page at /playground", () => {
     renderAt("/playground");
-    expect(screen.getByText(/Hi, I'm/i)).toBeInTheDocument();
     expect(screen.getByRole("heading", { name: /Take a break and fix some bugs/i })).toBeInTheDocument();
   });
 
