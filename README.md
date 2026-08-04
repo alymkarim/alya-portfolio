@@ -17,6 +17,7 @@ A responsive personal portfolio built with React, TypeScript and Vite.
 - Technical writing section featuring Medium articles
 - Downloadable CV
 - Direct links to GitHub, LinkedIn, Medium and email
+- Separate pages for articles, playground and contact (client-side routing)
 - Optimized for deployment on Vercel
 
 ## Run locally
@@ -27,6 +28,10 @@ npm run dev
 ```
 
 Open the local URL shown by Vite, usually `http://localhost:5173`.
+
+```text
+npm test   # run vitest smoke tests
+```
 
 ## Before deploying
 
@@ -78,6 +83,8 @@ git push -u origin main
 3. Import the `alya-portfolio` repository.
 4. Keep the detected Vite settings.
 5. Deploy.
+
+Client-side routing uses a SPA rewrite (see `vercel.json`).
 
 Vercel build settings:
 

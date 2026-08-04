@@ -1,99 +1,15 @@
 import { useMemo, useState } from "react";
 import {
   ArrowUpRight,
-  Check,
   ChevronDown,
-  ExternalLink,
-  Github,
-  X,
-  FileText,
-  Youtube,
 } from "lucide-react";
 import {
   projects,
   projectFilters,
   type Project,
 } from "../data/projects";
-
-
-function ProjectLinks({ project }: { project: Project }) {
-  return (
-    <div className="project-links">
-
-      {project.github && (
-        <a href={project.github} target="_blank" rel="noreferrer">
-          <Github size={18} />
-          GitHub
-        </a>
-      )}
-
-      {project.demo && (
-        <a href={project.demo} target="_blank" rel="noreferrer">
-          <ExternalLink size={18} />
-          Live Demo
-        </a>
-      )}
-
-      {project.paper && (
-        <a href={project.paper} target="_blank" rel="noreferrer">
-          <FileText size={18} />
-          Paper
-        </a>
-      )}
-
-      {project.poster && (
-        <a href={project.poster} target="_blank" rel="noreferrer">
-          <FileText size={18} />
-          Poster
-        </a>
-      )}
-
-      {project.youtube && (
-        <a href={project.youtube} target="_blank" rel="noreferrer">
-          <Youtube size={18} />
-          Video
-        </a>
-      )}
-      
-      {project.youtube2 && (
-        <a href={project.youtube2} target="_blank" rel="noreferrer">
-          <Youtube size={17} />
-          Video 2
-        </a>
-      )}
-
-      {project.facebook && (
-        <a href={project.facebook} target="_blank" rel="noreferrer">
-          <ExternalLink size={18} />
-          Facebook
-        </a>
-      )}
-
-    </div>
-  );
-}
-
-function DetailList({
-  title,
-  items,
-}: {
-  title: string;
-  items: string[];
-}) {
-  return (
-    <div className="project-detail-block">
-      <h4>{title}</h4>
-      <ul className="project-details-highlights">
-        {items.map((item) => (
-          <li key={item}>
-            <Check size={17} />
-            {item}
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
-}
+import ProjectDetails from "./ProjectDetails";
+import Reveal from "./Reveal";
 
 function Projects() {
   const [activeFilter, setActiveFilter] =
@@ -134,19 +50,21 @@ function Projects() {
   return (
     <section className="section projects-section" id="projects">
       <div className="container">
-        <div className="projects-heading">
-          <div>
-            <p className="section-label">Selected work</p>
-            <h2 className="section-title">
-              Projects across software, AI, data and research.
-            </h2>
-          </div>
+        <Reveal>
+          <div className="projects-heading">
+            <div>
+              <p className="section-label">All projects</p>
+              <h2 className="section-title">
+                Projects across software, AI, data and research.
+              </h2>
+            </div>
 
-          <p>
-            Completed work, active builds, scientific research and collaborative
-            projects. Select any card to open the full project case study.
-          </p>
-        </div>
+            <p>
+              Completed work, active builds, scientific research and collaborative
+              projects. Select any card to open the full project case study.
+            </p>
+          </div>
+        </Reveal>
 
         <div className="project-toolbar">
           <p className="project-count">
@@ -236,76 +154,10 @@ function Projects() {
         )}
 
         {selectedProject && (
-          <article className="project-details" aria-live="polite">
-            <button
-              type="button"
-              className="project-details-close"
-              onClick={() => setSelectedProject(null)}
-              aria-label="Close project details"
-            >
-              <X size={22} />
-            </button>
-
-            <div className="project-details-image-wrap">
-              <img
-                src={selectedProject.image}
-                alt={`${selectedProject.title} project preview`}
-              />
-            </div>
-
-            <div className="project-details-content">
-              <p className="project-details-category">
-                {selectedProject.category.join(" · ")}
-              </p>
-
-              <h3>{selectedProject.title}</h3>
-
-              <div className="project-meta">
-                <span>{selectedProject.year}</span>
-                <span>{selectedProject.status}</span>
-                <span>{selectedProject.role}</span>
-              </div>
-
-              <p>{selectedProject.description}</p>
-
-              <div className="project-problem">
-                <h4>Problem</h4>
-                <p>{selectedProject.problem}</p>
-              </div>
-
-              <div className="project-tech-list">
-                {selectedProject.technologies.map((technology) => (
-                  <span key={technology}>{technology}</span>
-                ))}
-              </div>
-
-              <div className="project-case-study-grid">
-                {selectedProject.architecture && (
-                  <DetailList
-                    title="Architecture"
-                    items={selectedProject.architecture}
-                  />
-                )}
-
-                <DetailList
-                  title="Key features"
-                  items={selectedProject.highlights}
-                />
-
-                <DetailList
-                  title="Challenges"
-                  items={selectedProject.challenges}
-                />
-
-                <DetailList
-                  title="Lessons learned"
-                  items={selectedProject.lessons}
-                />
-              </div>
-
-              <ProjectLinks project={selectedProject} />
-            </div>
-          </article>
+          <ProjectDetails
+            project={selectedProject}
+            onClose={() => setSelectedProject(null)}
+          />
         )}
       </div>
     </section>

@@ -430,6 +430,7 @@ img {
 .about-copy {
   max-width: 720px;
   font-size: 1.06rem;
+  text-align: justify;
 }
 
 .about-copy p:first-child {
@@ -872,9 +873,19 @@ footer {
 .footer-content {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 1rem;
   color: var(--muted);
   font-size: 0.9rem;
+}
+
+.footer-easter-egg {
+  color: var(--border);
+  transition: color 0.3s ease;
+}
+
+.footer-easter-egg:hover {
+  color: var(--accent);
 }
 
 /* Responsive */
@@ -3485,4 +3496,223 @@ select {
   .social-links a:hover {
     transform: none;
   }
+}
+/* Quick facts */
+
+.quick-facts {
+  padding: 0.5rem 0 3rem;
+}
+
+.quick-facts-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.quick-fact-item {
+  padding: 1.5rem 1rem;
+  border-left: 1px solid var(--border);
+}
+
+.quick-fact-item:first-child {
+  border-left: none;
+}
+
+.quick-fact-item strong {
+  display: block;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.05rem;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.5rem;
+}
+
+.quick-fact-item span {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+@media (max-width: 900px) {
+  .quick-facts-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .quick-fact-item:nth-child(3) {
+    border-left: none;
+  }
+}
+
+@media (max-width: 540px) {
+  .quick-facts-list {
+    grid-template-columns: 1fr;
+  }
+
+  .quick-fact-item {
+    border-left: none;
+    border-top: 1px solid var(--border);
+    padding: 1rem;
+  }
+
+  .quick-fact-item:first-child {
+    border-top: none;
+  }
+}
+
+/* Featured projects block */
+
+.featured-block {
+  padding-top: 0;
+}
+
+.featured-grid {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.featured-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border: 1px solid var(--text);
+  border-radius: 24px;
+  background: var(--surface-light);
+  cursor: pointer;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.featured-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 8px 8px 0 var(--text);
+}
+
+.featured-card-image-wrap {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  aspect-ratio: 16 / 10;
+}
+
+.featured-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.featured-card:hover .featured-card-image {
+  transform: scale(1.035);
+}
+
+.featured-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1.25rem 0.25rem 0.25rem;
+  flex: 1;
+}
+
+.featured-card-content h3 {
+  margin: 0;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.35rem;
+  letter-spacing: -0.03em;
+}
+
+.featured-card-content > p {
+  margin: 0.6rem 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.featured-card-tech {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.featured-card-tech span {
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+.featured-card-action {
+  margin-top: 1.25rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.55rem 1rem;
+  border-radius: 999px;
+  border: 1px solid var(--text);
+  background: var(--accent);
+  font-size: 0.85rem;
+  font-weight: 700;
+  transition: background 0.3s ease;
+}
+
+.featured-card-action:hover {
+  background: var(--accent-orange);
+}
+
+.featured-card-action-soon {
+  border-style: dashed;
+  background: transparent;
+  color: var(--muted);
+  cursor: default;
+}
+
+.featured-details-wrap {
+  margin-top: 3rem;
+}
+
+@media (max-width: 1100px) {
+  .featured-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .featured-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Reveal animation */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+.nav-link-active {
+  color: var(--accent-dark);
+  text-decoration: underline;
+  text-underline-offset: 6px;
 }

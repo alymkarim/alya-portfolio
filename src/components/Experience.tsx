@@ -1,4 +1,5 @@
 import { BriefcaseBusiness, Users } from "lucide-react";
+import Reveal from "./Reveal";
 
 const experienceItems = [
 
@@ -80,19 +81,21 @@ function Experience() {
       <div className="experience-blob" />
 
       <div className="container">
-        <div className="simple-section-heading">
-          <div>
-            <p className="section-label">Experience</p>
-            <h2 className="section-title">
-                Experience across tech, research and leadership.
-            </h2>
-          </div>
+        <Reveal>
+          <div className="simple-section-heading">
+            <div>
+              <p className="section-label">Experience</p>
+              <h2 className="section-title">
+                  Experience across tech, research and leadership.
+              </h2>
+            </div>
 
-          <p>
-              Experience spanning research, technical support, 
-              international collaboration and student leadership.
-          </p>
-        </div>
+            <p>
+                Experience spanning research, technical support, 
+                international collaboration and student leadership.
+            </p>
+          </div>
+        </Reveal>
 
         <div className="experience-list">
           {experienceItems.map((item) => {

@@ -15,11 +15,11 @@ function Contact() {
 
       <div className="container">
         <div className="contact-editorial-card">
-          <p className="section-label">Get in touch</p>
+          <p className="section-label">Contact</p>
 
           <h2>
-            Let's build something
-            <span> useful.</span>
+            Let's get in{" "}
+            <span>touch!</span>
           </h2>
 
           <p className="contact-editorial-copy">
@@ -66,7 +66,7 @@ function Contact() {
             </a>
 
             <a
-              href="https://alya-portfolio-jade.vercel.app/Alya_M_Karim_CV.pdf"
+              href="/Alya_M_Karim_CV.pdf"
               download="Alya_Karim_CV.pdf"
               type="application/pdf"
               target="_blank"

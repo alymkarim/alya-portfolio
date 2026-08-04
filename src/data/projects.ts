@@ -34,10 +34,6 @@ export type Project = {
   lessons: string[];
 };
 
-const githubCover = (repository: string) =>
-  `https://opengraph.githubassets.com/1/alymkarim/${repository}`;
-
-
 export const projectFilters: Array<"All" | ProjectCategory> = [
   "All",
   "Software",
@@ -364,7 +360,7 @@ export const projects: Project[] = [
   ],
   image: "/project-images/webpage.png",
   github: "https://github.com/alymkarim",
-  demo: "https://your-vercel-link.vercel.app",
+  demo: "https://alya-portfolio-jade.vercel.app",
   problem:
     "Create a fast, responsive portfolio that clearly communicates technical skills, project experience and career progression while remaining easy to navigate for recruiters.",
   highlights: [
@@ -643,7 +639,7 @@ export const projects: Project[] = [
       "A data-engineering project exploring ingestion, transformation, validation and monitoring for scalable analytics systems.",
     role: "Data engineer",
     technologies: ["Python", "Apache Spark", "Databricks", "Snowflake", "Azure"],
-    image: "/projects/data-infrastructure.png",
+    image: "/project-images/analytics.svg",
     problem:
       "Build reliable data movement and transformation workflows that can support analytics and model training.",
     highlights: [

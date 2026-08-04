@@ -32,7 +32,7 @@ function Articles() {
       <div className="container">
         <div className="writing-heading">
           <div>
-            <p className="section-label">Writing</p>
+            <p className="section-label">Articles</p>
             <h2 className="section-title">Thoughts on software, AI and lifelong learning.</h2>
           </div>
 

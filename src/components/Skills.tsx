@@ -1,3 +1,5 @@
+import Reveal from "./Reveal";
+
 const skillGroups = [
   {
     title: "Frontend",
@@ -44,18 +46,20 @@ function Skills() {
       <div className="skills-orbit skills-orbit-two" />
 
       <div className="container">
-        <div className="skills-editorial-heading">
-          <div>
-            <p className="section-label">Capabilities</p>
-            <h2 className="section-title">Tools I use to turn ideas into working products.</h2>
-          </div>
+        <Reveal>
+          <div className="skills-editorial-heading">
+            <div>
+              <p className="section-label">Skills</p>
+              <h2 className="section-title">Tools I use to turn ideas into working products.</h2>
+            </div>
 
-          <p>
-            I work across the full product flow: understanding the problem,
-            shaping the data, building the API, creating the interface, testing
-            the system and deploying it.
-          </p>
-        </div>
+            <p>
+              I work across the full product flow: understanding the problem,
+              shaping the data, building the API, creating the interface, testing
+              the system and deploying it.
+            </p>
+          </div>
+        </Reveal>
 
         <div className="skills-editorial-grid">
           {skillGroups.map((group, index) => (

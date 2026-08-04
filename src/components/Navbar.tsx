@@ -1,13 +1,15 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 
-const links = [
+const anchorLinks = [
+  "featured",
+  "about",
   "projects",
   "experience",
   "education",
   "skills",
   "articles",
-  "playground",
   "contact",
 ];
 
@@ -17,9 +19,9 @@ function Navbar() {
   return (
     <header className="navbar">
       <div className="container nav-content">
-        <a className="brand" href="#top" aria-label="Go to top">
+        <Link className="brand" to="/" aria-label="Go to home">
           AK<span>.</span>
-        </a>
+        </Link>
 
         <button
           className="menu-button"
@@ -30,10 +32,14 @@ function Navbar() {
         </button>
 
         <nav className={open ? "nav-links nav-links-open" : "nav-links"}>
-          {links.map((link) => (
-            <a key={link} href={`#${link}`} onClick={() => setOpen(false)}>
+          {anchorLinks.map((link) => (
+            <Link
+              key={link}
+              to={`/#${link}`}
+              onClick={() => setOpen(false)}
+            >
               {link}
-            </a>
+            </Link>
           ))}
         </nav>
       </div>
