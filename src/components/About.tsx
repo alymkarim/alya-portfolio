@@ -8,9 +8,10 @@ function About() {
         </div>
         <div className="about-copy">
           <p>
-            I am a software engineer with a background in applied physics, data
-            analytics and machine learning. I enjoy taking ideas beyond the
-            prototype stage and turning them into complete, usable applications.
+            I'm a full-stack software engineer and AI engineer building applied
+            products with Python, FastAPI, React and PostgreSQL. I take ideas
+            beyond the prototype stage and turn them into complete, deployed
+            applications.
           </p>
 
           <p>
