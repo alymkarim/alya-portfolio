@@ -18,8 +18,8 @@ function Contact() {
           <p className="section-label">Contact</p>
 
           <h2>
-            Let's build something
-            <span> useful.</span>
+            Let's get in{" "}
+            <span>touch!</span>
           </h2>
 
           <p className="contact-editorial-copy">
