@@ -13,4 +13,5 @@ dist-ssr
 *.sw?
 .env
 .env.local
-.vscode
+
+.worktrees/
