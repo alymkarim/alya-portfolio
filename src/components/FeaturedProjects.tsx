@@ -7,13 +7,23 @@ import Reveal from "./Reveal";
 function FeaturedProjects() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
+  function selectProject(project: Project) {
+    setSelectedProject(project);
+
+    window.setTimeout(() => {
+      document
+        .querySelector(".project-details")
+        ?.scrollIntoView({ behavior: "smooth", block: "center" });
+    }, 50);
+  }
+
   return (
     <section className="section featured-block" id="featured">
       <div className="container">
         <Reveal>
           <div className="projects-heading">
             <div>
-              <p className="section-label">Highlights</p>
+              <p className="section-label">Featured Work</p>
               <h2 className="section-title">
                 Featured work across software, AI and data.
               </h2>
@@ -31,7 +41,7 @@ function FeaturedProjects() {
             <article
               className="featured-card"
               key={project.id}
-              onClick={() => setSelectedProject(project)}
+              onClick={() => selectProject(project)}
             >
               <div className="featured-card-image-wrap">
                 <img

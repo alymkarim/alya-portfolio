@@ -49,7 +49,7 @@ function Skills() {
         <Reveal>
           <div className="skills-editorial-heading">
             <div>
-              <p className="section-label">Capabilities</p>
+              <p className="section-label">Skills</p>
               <h2 className="section-title">Tools I use to turn ideas into working products.</h2>
             </div>
 

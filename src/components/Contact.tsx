@@ -15,7 +15,7 @@ function Contact() {
 
       <div className="container">
         <div className="contact-editorial-card">
-          <p className="section-label">Get in touch</p>
+          <p className="section-label">Contact</p>
 
           <h2>
             Let's build something
