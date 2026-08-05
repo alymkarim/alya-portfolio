@@ -204,7 +204,7 @@ export const projects: Project[] = [
   },
   {
     id: "drone-human-detection",
-    title: "Drone-Assisted Human Detection",
+    title: "Rescue Vision: Drone-Assisted Human Detection",
     year: "2025",
     status: "Completed",
     featured: true,
@@ -224,6 +224,7 @@ export const projects: Project[] = [
       "PyQt6",
     ],
     image: "/project-images/drone.png",
+    github: "https://github.com/alymkarim/uav-human-detection",
     problem:
       "People in drone footage can appear small, partially obscured or positioned in ways that standard person detectors struggle to recognise.",
     architecture: [
