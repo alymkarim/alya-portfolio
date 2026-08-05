@@ -225,6 +225,7 @@ export const projects: Project[] = [
     ],
     image: "/project-images/drone.png",
     github: "https://github.com/alymkarim/uav-human-detection",
+    demo: "https://rescuevision.streamlit.app",
     problem:
       "People in drone footage can appear small, partially obscured or positioned in ways that standard person detectors struggle to recognise.",
     architecture: [
