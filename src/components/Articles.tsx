@@ -22,6 +22,13 @@ const articles = [
     topic: "Career",
     link: "https://medium.com/@alyamkarim97/from-lab-reports-to-log-files-705f9e7f1863?sharedUserId=alyamkarim97",
   },
+    {
+    title: "The Next AI Bubble: What’s Overhyped and What’s Real?",
+    description:
+      "AI is not fake. But that does not mean every AI company, product, or investment makes sense.",
+    topic: "AI",
+    link: "https://medium.com/@alyamkarim97/the-next-ai-bubble-what-s-overhyped-and-what-s-real-705f9e7f1863?sharedUserId=alyamkarim97",
+  },
 ];
 
 function Articles() {
