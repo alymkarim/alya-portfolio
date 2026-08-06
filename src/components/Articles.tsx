@@ -20,7 +20,7 @@ const articles = [
     description:
       "A personal story about moving from applied physics into software engineering, and how scientific thinking still shapes the way I design, debug and build software.",
     topic: "Career",
-    link: "", // add when published
+    link: "https://medium.com/@alyamkarim97/from-lab-reports-to-log-files-705f9e7f1863?sharedUserId=alyamkarim97",
   },
 ];
 
