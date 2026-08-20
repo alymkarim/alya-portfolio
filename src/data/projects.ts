@@ -663,34 +663,72 @@ export const projects: Project[] = [
   },
   {
     id: "data-infrastructure",
-    title: "Data Infrastructure for AI Systems",
-    year: "2025",
-    status: "In progress",
+    title: "DataForge",
+    year: "2026",
+    status: "Completed",
+    featured: true,
     category: ["Data", "Software"],
+
     shortDescription:
-      "Cloud-ready ETL pipelines for machine-learning and analytics workflows.",
+      "Full-stack data platform for ingesting, validating, transforming and monitoring analytics and ML-ready datasets.",
+
     description:
-      "A data-engineering project exploring ingestion, transformation, validation and monitoring for scalable analytics systems.",
-    role: "Data engineer",
-    technologies: ["Python", "Apache Spark", "Databricks", "Snowflake", "Azure"],
+      "DataForge is a production-inspired data engineering platform that processes raw datasets through Bronze, Silver and Gold layers, validates data quality, quarantines invalid records, generates analytics and ML-ready features, and exposes pipeline observability through a React dashboard and FastAPI API.",
+
+    role: "Data Engineer / Full-Stack Developer",
+
+    technologies: [
+      "Python",
+      "Pandas",
+      "PyArrow",
+      "FastAPI",
+      "Apache Spark",
+      "PySpark",
+      "Databricks",
+      "Delta Lake",
+      "React",
+      "TypeScript",
+      "Vite",
+      "Recharts",
+      "Docker",
+      "Vercel",
+      "Render",
+    ],
+
     image: "/project-images/analytics.svg",
+
+    github: "https://github.com/alymkarim/dataforge",
+
+    demo: "https://dataforge-ashen.vercel.app/",
+
     problem:
-      "Build reliable data movement and transformation workflows that can support analytics and model training.",
+      "Build a reliable and observable data platform that can ingest raw datasets, enforce data quality, support scalable transformation workflows and produce analytics and machine-learning-ready outputs.",
+
     highlights: [
-      "ETL pipeline design",
-      "Distributed processing",
-      "Data validation",
-      "Cloud architecture",
+      "Bronze, Silver and Gold data architecture",
+      "Data validation and quarantine workflows",
+      "FastAPI dataset upload, profiling and pipeline execution",
+      "React and TypeScript observability dashboard",
+      "Pipeline run history, lineage and quality monitoring",
+      "ML-ready customer and product feature generation",
+      "PySpark and Delta Lake processing with Databricks",
+      "Dockerized backend with Vercel and Render deployment",
     ],
+
     challenges: [
-      "Maintaining data quality across stages",
-      "Designing observable pipelines",
-      "Handling large datasets efficiently",
+      "Maintaining data quality across pipeline stages",
+      "Handling duplicate and invalid records without losing lineage",
+      "Designing reusable processing for large datasets",
+      "Connecting a deployed React frontend to a containerized FastAPI backend",
+      "Supporting both local Pandas processing and distributed Spark workflows",
     ],
+
     lessons: [
-      "Reliable AI depends on reliable data systems",
-      "Pipeline failures need traceable logs and metrics",
-      "Validation should happen at every boundary",
+      "Reliable AI systems depend on reliable data infrastructure",
+      "Validation and observability should exist at every pipeline boundary",
+      "Quarantining invalid records is safer than silently discarding them",
+      "Local and distributed processing paths should share the same data architecture",
+      "Deployment architecture matters as much as transformation logic",
     ],
   },
   {
