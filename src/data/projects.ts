@@ -695,7 +695,7 @@ export const projects: Project[] = [
       "Render",
     ],
 
-    image: "/project-images/analytics.svg",
+    image: "/project-images/dataforge_project.png",
 
     github: "https://github.com/alymkarim/dataforge",
 
