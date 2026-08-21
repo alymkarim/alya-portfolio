@@ -74,7 +74,7 @@ export const projects: Project[] = [
       "Render",
       "Supabase",
     ],
-    image: "https://raw.githubusercontent.com/alymkarim/researchiq/main/researchiq.gif",
+    image: "/project-images/researchiq.gif",
     github: "https://github.com/alymkarim/researchiq",
     live: "https://researchiq-omega.vercel.app",
     problem:
