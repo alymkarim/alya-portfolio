@@ -74,9 +74,9 @@ export const projects: Project[] = [
       "Render",
       "Supabase",
     ],
-    image: "https://raw.githubusercontent.com/alymkarim/researchiq/main/researchiq.gif",
+    image: "/project-images/researchiq.gif",
     github: "https://github.com/alymkarim/researchiq",
-    live: "https://researchiq-omega.vercel.app",
+    demo: "https://researchiq-omega.vercel.app",
     problem:
       "Researchers spend hours reading dense papers to extract key findings. Existing tools give generic chatbot responses without showing sources or evidence.",
     architecture: [
