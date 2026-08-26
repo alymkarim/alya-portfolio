@@ -74,9 +74,9 @@ export const projects: Project[] = [
       "Render",
       "Supabase",
     ],
-    image: "https://raw.githubusercontent.com/alymkarim/researchiq/main/researchiq.gif",
+    image: "/project-images/researchiq.gif",
     github: "https://github.com/alymkarim/researchiq",
-    live: "https://researchiq-omega.vercel.app",
+    demo: "https://researchiq-omega.vercel.app",
     problem:
       "Researchers spend hours reading dense papers to extract key findings. Existing tools give generic chatbot responses without showing sources or evidence.",
     architecture: [
@@ -326,12 +326,12 @@ export const projects: Project[] = [
     category: ["AI", "Software", "Data"],
 
     shortDescription:
-      "Full-stack machine learning platform for dataset analysis, model training, explainable AI and interactive predictions.",
+      "End-to-end machine learning application for automated model training, comparison, explainability and interactive prediction.",
 
     description:
-      "InsightForge AI is a full-stack analytics platform that enables users to upload datasets, automatically profile their structure, train and compare machine learning models, and generate explainable predictions through an intuitive web interface. The platform supports CSV, Excel and structured PDF datasets while adapting dynamically to both classification and regression tasks.",
+      "InsightForge AI is an end-to-end machine learning application that transforms uploaded datasets into trained and explainable predictive models. It automatically profiles data, builds preprocessing workflows, identifies classification or regression tasks, compares candidate models and provides interactive predictions through a React interface backed by FastAPI.",
 
-    role: "Full-Stack AI Developer",
+    role: "AI / ML Engineer · Full-Stack Developer",
 
     technologies: [
       "React",
@@ -356,44 +356,44 @@ export const projects: Project[] = [
     demo: "https://insight-forge-ai-bb4f.vercel.app/",
 
     problem:
-      "Building machine learning solutions typically requires multiple disconnected tools for preprocessing, training, evaluation and prediction. InsightForge AI unifies the complete workflow into a single interactive application, making machine learning more accessible while maintaining transparency through explainable AI.",
+      "Machine learning experimentation often involves separate tools for data preparation, model training, evaluation and prediction. InsightForge AI brings these stages into one reusable workflow that can adapt automatically to different datasets and prediction tasks.",
 
     architecture: [
-      "Dataset upload (CSV, Excel and PDF)",
-      "Automatic schema detection and data profiling",
-      "Data validation and preprocessing",
-      "Dynamic classification and regression pipeline",
-      "Model training and comparison",
-      "Feature importance analysis",
+      "Multi-format dataset ingestion",
+      "Schema detection and automated profiling",
+      "Dynamic preprocessing pipeline",
+      "Classification or regression task detection",
+      "Candidate model training",
+      "Model evaluation and comparison",
+      "Feature importance and explainability",
       "Interactive prediction interface",
-      "REST API with FastAPI",
+      "FastAPI inference and training API",
     ],
 
     highlights: [
-      "Supports CSV, Excel and structured PDF datasets",
-      "Automatic dataset profiling and schema detection",
-      "Classification and regression workflows",
-      "Automatic best-model selection",
-      "Feature importance visualisation",
-      "Interactive prediction dashboard",
-      "Responsive React frontend",
-      "REST API built with FastAPI",
-      "Live deployment on Vercel",
+      "Automatically adapts to classification and regression problems",
+      "Trains and compares multiple machine learning models",
+      "Selects the best-performing model using evaluation metrics",
+      "Generates feature importance for model interpretation",
+      "Builds prediction forms dynamically from dataset features",
+      "Supports CSV, Excel and structured PDF data",
+      "Interactive model evaluation and prediction dashboard",
+      "Reusable FastAPI machine learning backend",
     ],
 
     challenges: [
-      "Designing a dataset-agnostic machine learning pipeline",
-      "Supporting multiple file formats including PDF tables",
-      "Automatically switching between regression and classification",
-      "Generating dynamic prediction forms from uploaded datasets",
-      "Deploying a full-stack AI application on Vercel",
+      "Building reusable ML workflows across datasets with different schemas",
+      "Automatically determining the appropriate prediction task",
+      "Keeping preprocessing consistent between training and inference",
+      "Generating prediction interfaces dynamically from model features",
+      "Presenting model performance and explainability clearly to users",
     ],
 
     lessons: [
-      "Machine learning applications require strong software engineering principles as much as good models.",
-      "Dynamic preprocessing pipelines greatly improve reusability across different datasets.",
-      "Explainability is most valuable when presented in language users can easily understand.",
-      "Separating frontend and backend deployments simplifies maintenance and scaling.",
+      "Reusable ML systems require preprocessing and inference to be designed together.",
+      "Model selection should be driven by task-appropriate evaluation metrics rather than a single default algorithm.",
+      "Explainability becomes more useful when it is integrated directly into the prediction workflow.",
+      "Machine learning products require software architecture around the model, not just model training.",
     ],
   },
 {
@@ -693,12 +693,12 @@ export const projects: Project[] = [
     category: ["Data", "Software"],
 
     shortDescription:
-      "Full-stack data platform for ingesting, validating, transforming and monitoring analytics and ML-ready datasets.",
+      "Data engineering platform for building reliable, observable and scalable pipelines from raw ingestion to analytics and ML-ready data.",
 
     description:
-      "DataForge is a production-inspired data engineering platform that processes raw datasets through Bronze, Silver and Gold layers, validates data quality, quarantines invalid records, generates analytics and ML-ready features, and exposes pipeline observability through a React dashboard and FastAPI API.",
+      "DataForge is a production-inspired data engineering platform built around a Bronze, Silver and Gold architecture. It ingests raw datasets, validates and quarantines problematic records, performs transformation and feature engineering, and produces trusted analytics and ML-ready outputs while exposing pipeline health, lineage and data quality through an observability dashboard.",
 
-    role: "Data Engineer / Full-Stack Developer",
+    role: "Data Engineer / Platform Developer",
 
     technologies: [
       "Python",
@@ -725,33 +725,35 @@ export const projects: Project[] = [
     demo: "https://dataforge-ashen.vercel.app/",
 
     problem:
-      "Build a reliable and observable data platform that can ingest raw datasets, enforce data quality, support scalable transformation workflows and produce analytics and machine-learning-ready outputs.",
+      "Raw datasets are rarely ready for analytics or machine learning. DataForge addresses the engineering layer between ingestion and consumption by enforcing data quality, preserving invalid records for investigation, tracking pipeline execution and producing structured datasets that downstream applications can trust.",
 
     highlights: [
-      "Bronze, Silver and Gold data architecture",
-      "Data validation and quarantine workflows",
-      "FastAPI dataset upload, profiling and pipeline execution",
-      "React and TypeScript observability dashboard",
-      "Pipeline run history, lineage and quality monitoring",
-      "ML-ready customer and product feature generation",
-      "PySpark and Delta Lake processing with Databricks",
-      "Dockerized backend with Vercel and Render deployment",
+      "Bronze, Silver and Gold medallion architecture",
+      "Automated data quality validation",
+      "Invalid-record quarantine with lineage preservation",
+      "Raw-to-curated transformation workflows",
+      "Pipeline execution and run-history tracking",
+      "Data quality and pipeline observability dashboard",
+      "Analytics and ML-ready feature generation",
+      "Distributed processing with PySpark and Delta Lake",
+      "Databricks-compatible processing workflows",
+      "Dockerized FastAPI backend deployed on Render",
     ],
 
     challenges: [
-      "Maintaining data quality across pipeline stages",
-      "Handling duplicate and invalid records without losing lineage",
-      "Designing reusable processing for large datasets",
-      "Connecting a deployed React frontend to a containerized FastAPI backend",
-      "Supporting both local Pandas processing and distributed Spark workflows",
+      "Maintaining data integrity across multiple transformation layers",
+      "Separating invalid records without losing traceability",
+      "Keeping Pandas and distributed Spark workflows architecturally consistent",
+      "Designing transformations that remain reusable as dataset size increases",
+      "Exposing pipeline state and quality metrics through an observability layer",
     ],
 
     lessons: [
-      "Reliable AI systems depend on reliable data infrastructure",
-      "Validation and observability should exist at every pipeline boundary",
-      "Quarantining invalid records is safer than silently discarding them",
-      "Local and distributed processing paths should share the same data architecture",
-      "Deployment architecture matters as much as transformation logic",
+      "Reliable analytics and AI begin with trustworthy data pipelines.",
+      "Data quality checks are most effective when treated as part of the pipeline architecture rather than a final cleanup step.",
+      "Quarantine layers preserve valuable debugging information that would otherwise be lost.",
+      "The same logical data architecture can support both local and distributed execution.",
+      "Observability and lineage are core data-platform capabilities, not optional dashboard features.",
     ],
   },
   {
