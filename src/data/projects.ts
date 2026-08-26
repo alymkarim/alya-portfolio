@@ -114,58 +114,65 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: "cartos",
-    title: "CartOS Payment Platform",
+    id: "devdesk",
+    title: "DevDesk — Developer Workspace Store",
     year: "2026",
-    status: "In progress",
+    status: "Completed",
     featured: true,
-    category: ["Software"],
-    shortDescription:
-      "Production-style e-commerce platform with authentication, payments, orders and webhooks.",
-    description:
-      "A full-stack commerce system designed to demonstrate secure backend engineering, payment processing and cloud-ready application architecture.",
-    role: "Full-stack developer",
+    category: ["Software", "Data"],
+    shortDescription: "Full stack e-commerce store for developer workspace gear with authentication, payments, reviews, wishlist, and order tracking.",
+    description: "A production style e-commerce platform built from scratch with React and FastAPI. Includes JWT authentication, Stripe Checkout, product reviews, wishlist, discount codes, order tracking with status timeline, and a complete cart system supporting both guest and logged in users.",
+    role: "Full stack developer",
     technologies: [
       "React",
       "TypeScript",
+      "Tailwind CSS",
       "FastAPI",
       "PostgreSQL",
       "Stripe",
       "JWT",
-      "RBAC",
       "SQLAlchemy",
+      "Alembic",
       "Docker",
+      "GitHub Actions"
     ],
-    image: "/project-images/payment.jpg",
-    github: "https://github.com/alymkarim/CartOS",
-    problem:
-      "Build a realistic payment workflow that securely connects users, products, checkout sessions, webhooks and persisted orders.",
+    image: "/project-images/devdesk.gif",
+    github: "https://github.com/alymkarim/DevDesk",
+    live: "https://dev-desk-nine.vercel.app/",
+    problem: "Build a complete e-commerce experience that handles the full purchase lifecycle from browsing products and managing a cart to secure checkout, order tracking, and user accounts.",
     architecture: [
-      "React storefront",
-      "FastAPI REST API",
-      "JWT authentication and RBAC",
-      "Stripe Checkout",
-      "Signed webhook processing",
-      "PostgreSQL persistence",
+      "React and Tailwind CSS storefront with client side routing",
+      "FastAPI REST API with modular router architecture",
+      "JWT authentication with Argon2 password hashing",
+      "Stripe Checkout for payment processing",
+      "Signed webhook handling for order confirmation",
+      "PostgreSQL with Alembic migrations",
+      "Docker Compose for local development"
     ],
     highlights: [
-      "Registration and login",
-      "Protected endpoints",
-      "Product and order APIs",
-      "Stripe Checkout",
-      "Webhook verification",
+      "User registration, login, and password reset",
+      "Product reviews with star ratings",
+      "Wishlist with heart icon toggle",
+      "Shopping cart with guest and logged in support",
+      "Discount codes with percentage and fixed amount options",
+      "Order tracking with 4 step status timeline",
+      "Rate limiting on authentication endpoints",
+      "Responsive design with mobile navigation"
     ],
     challenges: [
-      "Keeping payment and database state consistent",
-      "Designing secure authorization rules",
-      "Handling duplicate webhook delivery",
+      "Handling both guest and authenticated cart state seamlessly",
+      "Processing webhook events reliably and idempotently",
+      "Managing Stripe metadata for multi item cart checkouts",
+      "Building a responsive UI that works across all screen sizes"
     ],
     lessons: [
-      "The backend must confirm payment through webhooks",
-      "Authentication and authorization solve different problems",
-      "Payment handlers should be idempotent",
-    ],
-  },
+      "Webhooks are the source of truth for payment status, never trust the client",
+      "Guest to authenticated cart merging requires careful state management",
+      "Stripe metadata has strict limits, plan your data structure early",
+      "Rate limiting is essential for any public facing auth endpoint"
+    ]
+  }
+
   {
     id: "taskflow",
     title: "TaskFlow",
