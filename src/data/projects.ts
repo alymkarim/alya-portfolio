@@ -138,7 +138,7 @@ export const projects: Project[] = [
     ],
     image: "/project-images/devdesk.gif",
     github: "https://github.com/alymkarim/DevDesk",
-    live: "https://dev-desk-nine.vercel.app/",
+    demo: "https://dev-desk-nine.vercel.app/",
     problem: "Build a complete e-commerce experience that handles the full purchase lifecycle from browsing products and managing a cart to secure checkout, order tracking, and user accounts.",
     architecture: [
       "React and Tailwind CSS storefront with client side routing",
@@ -171,8 +171,7 @@ export const projects: Project[] = [
       "Stripe metadata has strict limits, plan your data structure early",
       "Rate limiting is essential for any public facing auth endpoint"
     ]
-  }
-
+  },
   {
     id: "taskflow",
     title: "TaskFlow",
