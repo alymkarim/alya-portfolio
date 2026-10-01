@@ -139,6 +139,7 @@ export const projects: Project[] = [
     ],
     image: "/project-images/contagionlab.svg",
     github: "https://github.com/alymkarim/ContagionLab",
+    demo: "https://contagionlab.vercel.app",
     problem:
       "Risk is not the sum of each asset's own volatility. When institutions hold the same exposures, one default becomes everyone else's problem, which is what the 2008 cascade showed and what a per asset model cannot see.",
     architecture: [
